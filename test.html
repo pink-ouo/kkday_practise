@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.title5 {
+  width: 140px;
+  height: 200px;
+  position: absolute;
+  /* top: -8px; */
+  /* right: -8px; */
+  overflow: hidden;
+}
+
+.title5::before {
+  position: absolute;
+  right: 124px;
+  border-radius: 8px 8px 0 0;
+  width: 16px;
+  height: 8px;
+  background-color: #972f22;
+  /* content: ""; */
+}
+
+.title5::after {
+  position: absolute;
+  /* right: 0; */
+  /* top: 124px; */
+  border-radius: 0 8px 8px 0;
+  width: 8px;
+  height: 16px;
+  background-color: #972f22;
+  /* content: ""; */
+}
+
+.title5 span {
+  display: inline-block;
+  text-align: center;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  position: absolute;
+  /* top: 30px; */
+  /* right: -50px; */
+  z-index: 2;
+  overflow: hidden;
+  /* -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg); */
+  border: 1px dashed #fff;
+  box-shadow: 0 0 0 3px #dc5947, 0 14px 7px -9px rgba(0, 0, 0, 0.6);
+  background-color: #dc5947;
+  color: #fff;
+}
+    </style>
+</head>
+<body>
+    <div class="pr mt30" style="background-color: #eee; height: 200px;">
+        <div class="title5"><span>企业热门动态</span></div>
+    </div>
+</body>
+</html>
